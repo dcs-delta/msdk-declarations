@@ -1,0 +1,20 @@
+{
+	"name": "@dcs-delta/mission-scripting-environment-decl",
+	"description": "Delta type declarations for the DCS Mission Scripting Environment.",
+	"version": "1.0.0",
+	"license": "MIT",
+	"author": {
+		"name": "nootshell",
+		"discord": "https://discord.gg/bss935CAbF"
+	},
+
+	"files": [
+		"index.d.ts",
+		"types/**/*.d.ts"
+	],
+
+	"scripts": {
+		"generate-index": "find types -type f -name '*.d.ts' -exec echo '/// <reference path=\"{}\" />' \\; > index.d.ts",
+		"package": "( test -f index.d.ts || npm run generate-index) && mkdir -vp bin && npm pack --pack-destination bin"
+	}
+}

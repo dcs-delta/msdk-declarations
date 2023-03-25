@@ -1,0 +1,13 @@
+# Enable whitelisting mode
+*
+!*/
+
+# Allow repo files
+!.gitignore
+!.editorconfig
+!*.md
+
+# Disallow artifacts
+bin
+obj
+node_modules

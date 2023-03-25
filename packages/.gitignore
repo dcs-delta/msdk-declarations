@@ -1,0 +1,6 @@
+# Allow project files
+!package.json
+!tsconfig.json
+
+# Allow source files
+!*.d.ts

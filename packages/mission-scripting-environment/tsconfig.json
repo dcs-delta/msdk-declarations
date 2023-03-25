@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+
+		"strict": true,
+		"target": "ESNext",
+		"lib": ["ESnext"],
+
+		"types": [],
+
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true
+	},
+
+	"files": [
+		"index.d.ts"
+	]
+}

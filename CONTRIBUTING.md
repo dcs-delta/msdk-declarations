@@ -1,0 +1,1 @@
+See MSDK contribution guidelines.
