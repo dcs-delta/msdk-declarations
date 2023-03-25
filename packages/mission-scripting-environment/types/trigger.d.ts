@@ -105,7 +105,47 @@ declare module trigger {
 		export function signalFlare(this: void, location: MSE.Vec3, color: MSE.FlareColor, azimuth: number): void;
 
 
-		export function outText(this: void, text: string, displayTime?: number, clearView?: boolean): void;
+		/**
+		 * Displays the specified text to all, for the specified time in seconds.
+		 *
+		 * @param text The text to display.
+		 * @param displayTime The time to display the text in seconds.
+		 * @param clearView Whether or not to clear existing messages.
+		 */
+		export function outText(this: void, text: string, displayTime: number, clearView?: boolean): void;
+
+
+		/**
+		 * Displays the specified text to the specified coalition, for the specified time in seconds.
+		 *
+		 * @param coalition The coalition to display the text to.
+		 * @param text The text to display.
+		 * @param displayTime The time to display the text in seconds.
+		 * @param clearView Whether or not to clear existing messages.
+		 */
+		export function outTextForCoalition(this: void, coalition: MSE.CoalitionSide, text: string, displayTime: number, clearView?: boolean): void;
+
+
+		/**
+		 * Displays the specified text to the specified country, for the specified time in seconds.
+		 *
+		 * @param country The country to display the text to.
+		 * @param text The text to display.
+		 * @param displayTime The time to display the text in seconds.
+		 * @param clearView Whether or not to clear existing messages.
+		 */
+		export function outTextForCountry(this: void, country: MSE.Country, text: string, displayTime: number, clearView?: boolean): void;
+
+
+		/**
+		 * Displays the specified text to the group with the specified group identifier, for the specified time in seconds.
+		 *
+		 * @param groupId The group identifier of the group to display the text to.
+		 * @param text The text to display.
+		 * @param displayTime The time to display the text in seconds.
+		 * @param clearView Whether or not to clear existing messages.
+		 */
+		export function outTextForGroup(this: void, groupId: number, text: string, displayTime: number, clearView?: boolean): void;
 
 	}
 
