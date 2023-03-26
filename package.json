@@ -8,13 +8,23 @@
 		"discord": "https://discord.gg/bss935CAbF"
 	},
 
+	"typedoc": {
+		"displayName": "MSDK (TypeScript declarations)",
+		"tsconfig": "./tsconfig.json"
+	},
+
 	"files": [
 		"index.d.ts",
 		"types/**/*.d.ts"
 	],
 
 	"scripts": {
-		"generate-index": "find types -type f -name '*.d.ts' -exec echo '/// <reference path=\"{}\" />' \\; > index.d.ts",
-		"package": "( test -f index.d.ts || npm run generate-index) && mkdir -vp bin && npm pack --pack-destination bin"
+		"generate-index": "cd src && find types -type f -name '*.d.ts' -exec echo '/// <reference path=\"{}\" />' \\; > index.d.ts",
+		"package-prep": "mkdir -vp bin && rm -rf obj && cp -a src obj && cp package.json obj/",
+		"package": "( test -f src/index.d.ts || npm run generate-index) && npm run package-prep && cd obj && npm pack --pack-destination ../bin"
+	},
+
+	"devDependencies": {
+		"typedoc": "^0.23.28"
 	}
 }

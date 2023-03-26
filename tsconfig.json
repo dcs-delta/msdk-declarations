@@ -16,6 +16,13 @@
 	},
 
 	"files": [
-		"index.d.ts"
-	]
+		"src/index.d.ts"
+	],
+
+	"typedocOptions": {
+		"entryPointStrategy": "expand",
+		"entryPoints": [
+			"./src"
+		]
+	}
 }
