@@ -1,5 +1,5 @@
 {
-	"name": "@dcs-delta/mission-scripting-environment-decl",
+	"name": "@dcs-delta/msdk-declarations",
 	"description": "Delta type declarations for the DCS Mission Scripting Environment.",
 	"version": "1.0.0",
 	"license": "MIT",
