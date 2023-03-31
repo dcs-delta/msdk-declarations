@@ -134,7 +134,7 @@ declare module trigger {
 		 * @param displayTime The time to display the text in seconds.
 		 * @param clearView Whether or not to clear existing messages.
 		 */
-		export function outTextForCountry(this: void, country: MSE.Country, text: string, displayTime: number, clearView?: boolean): void;
+		export function outTextForCountry(this: void, country: country.countryId, text: string, displayTime: number, clearView?: boolean): void;
 
 
 		/**

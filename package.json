@@ -14,12 +14,11 @@
 	},
 
 	"files": [
-		"index.d.ts",
-		"types/**/*.d.ts"
+		"**/*.d.ts"
 	],
 
 	"scripts": {
-		"generate-index": "cd src && find types -type f -name '*.d.ts' -exec echo '/// <reference path=\"{}\" />' \\; > index.d.ts",
+		"generate-index": "cd src && find . -type f -name '*.d.ts' -not -wholename './index.d.ts' -exec echo '/// <reference path=\"{}\" />' \\; > index.d.ts",
 		"package-prep": "mkdir -vp bin && rm -rf obj && cp -a src obj && cp package.json obj/",
 		"package": "( test -f src/index.d.ts || npm run generate-index) && npm run package-prep && cd obj && npm pack --pack-destination ../bin"
 	},

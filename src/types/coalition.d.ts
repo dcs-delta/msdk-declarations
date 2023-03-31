@@ -10,7 +10,7 @@ declare module coalition {
 	 * @deprecated Not yet implemented.
 	 */
 	// TODO: proper typing for any
-	export function addGroup(this: void, country: MSE.Country, category: MSE.GroupCategory, data: any): Group;
+	export function addGroup(this: void, country: country.countryId, category: MSE.GroupCategory, data: any): Group;
 
 
 	/**
@@ -21,7 +21,7 @@ declare module coalition {
 	 *
 	 * @deprecated Not yet implemented.
 	 */
-	export function addStaticObject(this: void, country: MSE.Country, data: any): StaticObject;
+	export function addStaticObject(this: void, country: country.countryId, data: any): StaticObject;
 
 
 	/**
@@ -75,6 +75,6 @@ declare module coalition {
 	 *
 	 * @param country The country to get the coalition side for.
 	 */
-	export function getCountryCoalition(this: void, country: MSE.Country): MSE.CoalitionSide;
+	export function getCountryCoalition(this: void, country: country.countryId): MSE.CoalitionSide;
 
 }

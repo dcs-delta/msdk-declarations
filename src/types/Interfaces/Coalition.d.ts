@@ -19,6 +19,6 @@ declare interface ICoalitionObject extends ICoalitionEntity {
 	/**
 	 * Gets the country of the coalition object.
 	 */
-	getCountry(): MSE.Country;
+	getCountry(): country.countryId;
 
 }

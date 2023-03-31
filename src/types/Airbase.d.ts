@@ -45,7 +45,7 @@ declare class Airbase extends _Object implements ICoalitionObject {
 
 
 	/* ICoalitionObject */
-	public getCountry(): MSE.Country;
+	public getCountry(): country.countryId;
 	public getCoalition(): MSE.CoalitionSide;
 
 }
