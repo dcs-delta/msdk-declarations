@@ -1,4 +1,5 @@
 /// <reference path="./enums/country.d.ts" />
+/// <reference path="./enums/world.d.ts" />
 /// <reference path="./types/Airbase.d.ts" />
 /// <reference path="./types/coalition.d.ts" />
 /// <reference path="./types/Controller.d.ts" />
