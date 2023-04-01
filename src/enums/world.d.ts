@@ -1,4 +1,4 @@
-declare module world {
+declare namespace world {
 
 	export type eventName =
 		"S_EVENT_INVALID"           | "S_EVENT_SHOT"                   | "S_EVENT_HIT"                     | "S_EVENT_TAKEOFF"                      | "S_EVENT_LAND"             |

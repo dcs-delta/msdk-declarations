@@ -1,4 +1,4 @@
-declare module country {
+declare namespace country {
 
 	export type countryName =
 		"RUSSIA"          | "UKRAINE"   | "USA"             | "TURKEY"     | "UK"                   | "FRANCE"       | "GERMANY"        | "AGGRESSORS" | "CANADA"      | "SPAIN"                   |
