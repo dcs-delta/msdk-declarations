@@ -1,5 +1,6 @@
 /// <reference path="./enums/coalition.d.ts" />
 /// <reference path="./enums/country.d.ts" />
+/// <reference path="./enums/radio.d.ts" />
 /// <reference path="./enums/trigger.d.ts" />
 /// <reference path="./enums/world.d.ts" />
 /// <reference path="./types/Airbase.d.ts" />
