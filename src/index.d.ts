@@ -13,6 +13,7 @@
 /// <reference path="./enums/Weapon.d.ts" />
 /// <reference path="./enums/Weapon.flag.d.ts" />
 /// <reference path="./enums/world.d.ts" />
+/// <reference path="./interfaces/IAnimatable.d.ts" />
 /// <reference path="./interfaces/ICoalitionEntity.d.ts" />
 /// <reference path="./interfaces/ICoalitionObject.d.ts" />
 /// <reference path="./interfaces/IIdentifiableEntity.T.d.ts" />

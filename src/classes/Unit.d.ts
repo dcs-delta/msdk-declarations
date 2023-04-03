@@ -4,7 +4,7 @@ declare type UnitID = number;
 /**
  * Represents units such as aircraft, surface vehicles, and ground structures.
  */
-declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionObject {
+declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionObject, IAnimatable {
 
 	/* IObject */
 	public isExist(): boolean;
@@ -25,6 +25,9 @@ declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionOb
 	/* ICoalitionObject */
 	public getCoalition(): coalition.sideId;
 	public getCountry(): country.countryId;
+
+	/* IAnimatable */
+	public getDrawArgumentValue(arg: number): number;
 
 
 
@@ -124,16 +127,6 @@ declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionOb
 	 */
 	// TODO: determine proper typing for interest object
 	public getRadar(): [operational: boolean, interest: any];
-
-
-	/**
-	 * Gets the value for the specified animation argument on the external model of the unit.
-	 *
-	 * @param arg The animation argument to get the value of.
-	 *
-	 * @returns The value of the animation argument, or 0 if it was invalid.
-	 */
-	public getDrawArgumentValue(arg: number): number;
 
 
 	/**
