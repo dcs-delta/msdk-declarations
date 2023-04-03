@@ -1,30 +1,27 @@
-/**
- * Represents unique objects with a body, name, category, and type.
- */
-declare class _Object {
+declare interface IObject {
 
 	/**
 	 * Gets a boolean indicating whether or not the object exists within the current mission.
 	 */
-	public isExist(): boolean;
+	isExist(): boolean;
 
 
 	/**
 	 * Destroys the object, removing it from the game world without creating an event.
 	 */
-	public destroy(): void;
+	destroy(): void;
 
 
 	/**
 	 * Gets the category of the object.
 	 */
-	public getCategory(): MSE.ObjectCategory;
+	getCategory(): _Object.CategoryId;
 
 
 	/**
 	 * Gets the string that describes the object's type.
 	 */
-	public getTypeName(): string;
+	getTypeName(): string;
 
 
 	/**
@@ -32,7 +29,7 @@ declare class _Object {
 	 *
 	 * @deprecated Not yet implemented.
 	 */
-	public getDesc(): any;
+	getDesc(): any;
 
 
 	/**
@@ -42,36 +39,36 @@ declare class _Object {
 	 *
 	 * @param attribute The attribute to check.
 	 */
-	public hasAttribute(attribute: string): boolean;
+	hasAttribute(attribute: string): boolean;
 
 
 	/**
 	 * Gets the name of the object as defined by the mission editor or any of the dynamic spawning functions.
 	 */
-	public getName(): string;
+	getName(): string;
 
 
 	/**
 	 * Gets the location vector of the object.
 	 */
-	public getPoint(): Vec3;
+	getPoint(): Vec3;
 
 
 	/**
 	 * Gets the location vector as well as orientation vectors of the object.
 	 */
-	public getPosition(): Position3;
+	getPosition(): Position3;
 
 
 	/**
 	 * Gets the velocity vector of the object.
 	 */
-	public getVelocity(): Vec3;
+	getVelocity(): Vec3;
 
 
 	/**
 	 * Gets a boolean indicating whether or not the object is currently in the air.
 	 */
-	public inAir(): boolean;
+	inAir(): boolean;
 
 }

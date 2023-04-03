@@ -123,7 +123,7 @@ declare namespace trigger {
 		 * @param displayTime The time to display the text in seconds.
 		 * @param clearView Whether or not to clear existing messages.
 		 */
-		export function outTextForCoalition(this: void, coalition: MSE.CoalitionSide, text: string, displayTime: number, clearView?: boolean): void;
+		export function outTextForCoalition(this: void, coalition: coalition.sideId, text: string, displayTime: number, clearView?: boolean): void;
 
 
 		/**

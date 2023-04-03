@@ -1,7 +1,20 @@
 /**
  * Represents a weapon object.
  */
-declare class Weapon extends _Object implements ICoalitionObject {
+declare class Weapon implements IObject, ICoalitionObject {
+
+	/* IObject */
+	public isExist(): boolean;
+	public destroy(): void;
+	public getCategory(): _Object.CategoryId;
+	public getTypeName(): string;
+	public getDesc(): any;
+	public hasAttribute(attribute: string): boolean;
+	public getName(): string;
+	public getPoint(): Vec3;
+	public getPosition(): Position3;
+	public getVelocity(): Vec3;
+	public inAir(): boolean;
 
 	/* ICoalitionObject */
 	public getCoalition(): coalition.sideId;
@@ -17,8 +30,8 @@ declare class Weapon extends _Object implements ICoalitionObject {
 
 
 	/**
-	 * Gets the {@link _Object object} the weapon is guiding to.
+	 * Gets the {@link IObject object} the weapon is guiding to.
 	 */
-	public getTarget(): _Object;
+	public getTarget(): IObject;
 
 }

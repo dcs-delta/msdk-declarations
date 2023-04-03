@@ -4,19 +4,27 @@ declare type UnitID = number;
 /**
  * Represents units such as aircraft, surface vehicles, and ground structures.
  */
-declare class Unit extends _Object implements ICoalitionObject, IIdentifiableEntity<UnitID> {
+declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionObject {
+
+	/* IObject */
+	public isExist(): boolean;
+	public destroy(): void;
+	public getCategory(): _Object.CategoryId;
+	public getTypeName(): string;
+	public getDesc(): any;
+	public hasAttribute(attribute: string): boolean;
+	public getName(): string;
+	public getPoint(): Vec3;
+	public getPosition(): Position3;
+	public getVelocity(): Vec3;
+	public inAir(): boolean;
+
+	/* IIdentifiableEntity */
+	public getID(): UnitID;
 
 	/* ICoalitionObject */
 	public getCoalition(): coalition.sideId;
 	public getCountry(): country.countryId;
-
-
-	/* IIdentifiableEntity */
-
-	/**
-	 * Gets the unique identifier within the current mission of the unit.
-	 */
-	public getID(): UnitID;
 
 
 
@@ -108,7 +116,7 @@ declare class Unit extends _Object implements ICoalitionObject, IIdentifiableEnt
 	 * @param type Optionally filter by sensor type.
 	 * @param subtype Optionally filter even further by sensor subtype.
 	 */
-	public hasSensors(type?: MSE.UnitSensorType, subtype?: MSE.UnitOpticType | MSE.UnitRadarType): boolean;
+	public hasSensors(type?: Unit.SensorTypeId, subtype?: Unit.OpticTypeId | Unit.RadarTypeId): boolean;
 
 
 	/**

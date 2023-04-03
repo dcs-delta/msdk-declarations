@@ -4,14 +4,26 @@ declare type GroupID = number;
 /**
  * Represents a group of {@link Unit units}.
  */
-declare class Group extends _Object implements ICoalitionEntity, IIdentifiableEntity<GroupID> {
+declare class Group implements IObject, IIdentifiableEntity<GroupID>, ICoalitionEntity {
 
-	/* ICoalitionEntity */
-	public getCoalition(): coalition.sideId;
-
+	/* IObject */
+	public isExist(): boolean;
+	public destroy(): void;
+	public getCategory(): _Object.CategoryId;
+	public getTypeName(): string;
+	public getDesc(): any;
+	public hasAttribute(attribute: string): boolean;
+	public getName(): string;
+	public getPoint(): Vec3;
+	public getPosition(): Position3;
+	public getVelocity(): Vec3;
+	public inAir(): boolean;
 
 	/* IIdentifiableEntity */
 	public getID(): GroupID;
+
+	/* ICoalitionEntity */
+	public getCoalition(): coalition.sideId;
 
 
 
