@@ -1,3 +1,4 @@
+/// <reference path="./enums/AI.d.ts" />
 /// <reference path="./enums/coalition.d.ts" />
 /// <reference path="./enums/country.d.ts" />
 /// <reference path="./enums/radio.d.ts" />
