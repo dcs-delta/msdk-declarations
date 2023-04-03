@@ -1,3 +1,6 @@
+declare type GroupID = number;
+
+
 /**
  * Represents a group of {@link Unit units}.
  */

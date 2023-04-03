@@ -13,6 +13,7 @@
 /// <reference path="./interfaces/ICoalitionEntity.d.ts" />
 /// <reference path="./interfaces/ICoalitionObject.d.ts" />
 /// <reference path="./singletons/coalition.d.ts" />
+/// <reference path="./singletons/missionCommands.d.ts" />
 /// <reference path="./types/Airbase.d.ts" />
 /// <reference path="./types/Controller.d.ts" />
 /// <reference path="./types/env/mission/triggers.d.ts" />
