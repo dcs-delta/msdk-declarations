@@ -1,9 +1,23 @@
+declare type AirbaseID = number;
+
+
 /**
  * Represents airbases such as airdromes, and helipads as well as ships with landing pads or flight decks.
  *
  * @deprecated Not yet implemented fully.
  */
-declare class Airbase extends _Object implements ICoalitionObject {
+declare class Airbase extends _Object implements ICoalitionObject, IIdentifiableEntity<AirbaseID> {
+
+	/* ICoalitionObject */
+	public getCountry(): country.countryId;
+	public getCoalition(): coalition.sideId;
+
+
+	/* IIdentifiableEntity */
+	public getID(): AirbaseID;
+
+
+
 
 	/**
 	 * Gets the parking spots of the airbase, optionally filtering them down to available ones.
@@ -40,12 +54,5 @@ declare class Airbase extends _Object implements ICoalitionObject {
 	 * @param value Whether or not the airbase's ATC should be silent.
 	 */
 	public setRadioSilentMode(value: boolean): void;
-
-
-
-
-	/* ICoalitionObject */
-	public getCountry(): country.countryId;
-	public getCoalition(): MSE.CoalitionSide;
 
 }
