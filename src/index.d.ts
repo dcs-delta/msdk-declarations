@@ -1,5 +1,6 @@
 /// <reference path="./classes/Group.d.ts" />
 /// <reference path="./classes/Unit.d.ts" />
+/// <reference path="./classes/Weapon.d.ts" />
 /// <reference path="./enums/AI.d.ts" />
 /// <reference path="./enums/coalition.d.ts" />
 /// <reference path="./enums/country.d.ts" />
