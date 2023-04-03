@@ -4,7 +4,7 @@ declare type StaticObjectID = number;
 /**
  * Represents static objects.
  */
-declare class StaticObject implements IObject, ICoalitionObject, IIdentifiableEntity<StaticObjectID>, IAnimatable {
+declare class StaticObject implements IObject, ICoalitionObject, IIdentifiableEntity<StaticObjectID>, IAnimatableEntity {
 
 	/* IObject */
 	public isExist(): boolean;
@@ -26,7 +26,7 @@ declare class StaticObject implements IObject, ICoalitionObject, IIdentifiableEn
 	/* IIdentifiableEntity */
 	public getID(): StaticObjectID;
 
-	/* IAnimatable */
+	/* IAnimatableEntity */
 	public getDrawArgumentValue(arg: number): number;
 
 

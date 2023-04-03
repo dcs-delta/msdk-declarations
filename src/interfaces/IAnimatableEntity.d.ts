@@ -1,4 +1,4 @@
-declare interface IAnimatable {
+declare interface IAnimatableEntity {
 
 	/**
 	 * Gets the value for the specified animation argument on the external model of the unit.

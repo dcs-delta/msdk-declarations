@@ -4,7 +4,7 @@ declare type UnitID = number;
 /**
  * Represents units such as aircraft, surface vehicles, and ground structures.
  */
-declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionObject, IAnimatable {
+declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionObject, IAnimatableEntity {
 
 	/* IObject */
 	public isExist(): boolean;
@@ -26,7 +26,7 @@ declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionOb
 	public getCoalition(): coalition.sideId;
 	public getCountry(): country.countryId;
 
-	/* IAnimatable */
+	/* IAnimatableEntity */
 	public getDrawArgumentValue(arg: number): number;
 
 
