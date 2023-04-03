@@ -1,5 +1,6 @@
 /// <reference path="./classes/Airbase.d.ts" />
 /// <reference path="./classes/Group.d.ts" />
+/// <reference path="./classes/SceneryObject.d.ts" />
 /// <reference path="./classes/StaticObject.d.ts" />
 /// <reference path="./classes/Unit.d.ts" />
 /// <reference path="./classes/Weapon.d.ts" />
