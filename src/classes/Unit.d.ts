@@ -4,7 +4,7 @@ declare type UnitID = number;
 /**
  * Represents units such as aircraft, surface vehicles, and ground structures.
  */
-declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionObject, IAnimatableEntity {
+declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionObject, IAnimatableEntity, IMortalEntity {
 
 	/* IObject */
 	public isExist(): boolean;
@@ -28,6 +28,9 @@ declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionOb
 
 	/* IAnimatableEntity */
 	public getDrawArgumentValue(arg: number): number;
+
+	/* IMortalEntity */
+	public getLife(): number;
 
 
 
@@ -72,12 +75,6 @@ declare class Unit implements IObject, IIdentifiableEntity<UnitID>, ICoalitionOb
 	 * Gets the callsign of the unit.
 	 */
 	public getCallsign(): string;
-
-
-	/**
-	 * Gets the current HP of the unit. If the value is less than 1, the unit is considered dead.
-	 */
-	public getLife(): number;
 
 
 	/**

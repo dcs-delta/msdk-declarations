@@ -19,6 +19,7 @@
 /// <reference path="./interfaces/ICoalitionEntity.d.ts" />
 /// <reference path="./interfaces/ICoalitionObject.d.ts" />
 /// <reference path="./interfaces/IIdentifiableEntity.T.d.ts" />
+/// <reference path="./interfaces/IMortalEntity.d.ts" />
 /// <reference path="./interfaces/IObject.d.ts" />
 /// <reference path="./singletons/coalition.d.ts" />
 /// <reference path="./singletons/missionCommands.d.ts" />
