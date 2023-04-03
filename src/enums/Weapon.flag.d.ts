@@ -206,7 +206,9 @@ declare namespace Weapon {
 		/** AnyShell */
 		0x3C30000000 |
 		/** Torpedo */
-		0x0100000000;
+		0x0100000000 |
+		/* Type is flaggable, we have no option but to make any number match. The list above is simply for completeness sake. */
+		number;
 
 	export const flag: Record<flagName, flagId>;
 
