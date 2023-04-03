@@ -46,4 +46,25 @@ declare class StaticObject implements IObject, ICoalitionObject, IIdentifiableEn
 	 */
 	public getCargoWeight(): number;
 
+
+
+
+	/**
+	 * Gets the static object with the specified unique name.
+	 *
+	 * @param name The name of the static object to retrieve.
+	 */
+	public static getByName(this: void, name: string): StaticObject;
+
+
+	/**
+	 * Gets the descriptor table of the static object with the specified unique name.
+	 *
+	 * @param name The name of the static object to retrieve the descriptor table of.
+	 *
+	 * @deprecated Not yet implemented.
+	 */
+	// TODO: use proper type instead of any
+	public static getDescByName(this: void, name: string): any;
+
 }
