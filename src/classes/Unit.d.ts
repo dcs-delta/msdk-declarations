@@ -8,6 +8,8 @@ declare class Unit implements ICoalitionObject {
 	public getCountry(): country.countryId;
 
 
+
+
 	/**
 	 * Gets a boolean value indicating whether or not the unit is activated.
 	 */

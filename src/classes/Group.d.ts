@@ -7,6 +7,8 @@ declare class Group implements ICoalitionEntity {
 	public getCoalition(): coalition.sideId;
 
 
+
+
 	/**
 	 * Activates the group if it had a delated start or late activation.
 	 */
