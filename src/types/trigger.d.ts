@@ -5,9 +5,9 @@
  *
  * More info: {@link https://wiki.hoggitworld.com/view/DCS_singleton_trigger}
  */
-declare module trigger {
+declare namespace trigger {
 
-	export module action {
+	export namespace action {
 
 		/**
 		 * Configure smoke plumes for the specified aircraft.
