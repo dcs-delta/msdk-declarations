@@ -12,3 +12,7 @@ Usage instructions to come. Essentially:
 - Install this package (`@dcs-delta/msdk-declarations`) as dev dependency along with `typescript-to-lua`
 - In your `tsconfig.json`, under `compilerOptions`, add `"types": ["@dcs-delta/msdk-declarations"]`
 - Types should be available as globals, note however that once declarations are mostly in, I'll most likely switch to an import/export system instead of using globals
+
+
+## Discord
+There's a (probably empty) discord available, probably easiest to discuss ideas there: [take me there](https://discord.gg/bss935CAbF)
