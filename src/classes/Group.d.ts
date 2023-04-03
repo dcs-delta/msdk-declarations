@@ -4,10 +4,14 @@ declare type GroupID = number;
 /**
  * Represents a group of {@link Unit units}.
  */
-declare class Group implements ICoalitionEntity {
+declare class Group extends _Object implements ICoalitionEntity, IIdentifiableEntity<GroupID> {
 
 	/* ICoalitionEntity */
 	public getCoalition(): coalition.sideId;
+
+
+	/* IIdentifiableEntity */
+	public getID(): GroupID;
 
 
 

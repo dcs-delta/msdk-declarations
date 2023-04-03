@@ -1,11 +1,22 @@
+declare type UnitID = number;
+
+
 /**
  * Represents units such as aircraft, surface vehicles, and ground structures.
  */
-declare class Unit implements ICoalitionObject {
+declare class Unit extends _Object implements ICoalitionObject, IIdentifiableEntity<UnitID> {
 
 	/* ICoalitionObject */
 	public getCoalition(): coalition.sideId;
 	public getCountry(): country.countryId;
+
+
+	/* IIdentifiableEntity */
+
+	/**
+	 * Gets the unique identifier within the current mission of the unit.
+	 */
+	public getID(): UnitID;
 
 
 
@@ -20,12 +31,6 @@ declare class Unit implements ICoalitionObject {
 	 * Gets the name of the player if the unit is controlled by a player, otherwise returns null.
 	 */
 	public getPlayerName(): string | null;
-
-
-	/**
-	 * Gets the unique identifier within the current mission of the unit.
-	 */
-	public getID(): number;
 
 
 	/**

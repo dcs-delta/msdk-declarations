@@ -12,6 +12,7 @@
 /// <reference path="./enums/world.d.ts" />
 /// <reference path="./interfaces/ICoalitionEntity.d.ts" />
 /// <reference path="./interfaces/ICoalitionObject.d.ts" />
+/// <reference path="./interfaces/IIdentifiableEntity.T.d.ts" />
 /// <reference path="./singletons/coalition.d.ts" />
 /// <reference path="./singletons/missionCommands.d.ts" />
 /// <reference path="./types/Airbase.d.ts" />
