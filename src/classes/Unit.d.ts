@@ -3,6 +3,11 @@
  */
 declare class Unit implements ICoalitionObject {
 
+	/* ICoalitionObject */
+	public getCoalition(): coalition.sideId;
+	public getCountry(): country.countryId;
+
+
 	/**
 	 * Gets a boolean value indicating whether or not the unit is activated.
 	 */
@@ -142,13 +147,6 @@ declare class Unit implements ICoalitionObject {
 	 * @returns The number of infantry units, or null if infantry units are not appropriate to the type of unit.
 	 */
 	public getDescentCapacity(): number;
-
-
-
-
-	/* ICoalitionObject */
-	public getCoalition(): coalition.sideId;
-	public getCountry(): country.countryId;
 
 
 

@@ -3,6 +3,10 @@
  */
 declare class Group implements ICoalitionEntity {
 
+	/* ICoalitionEntity */
+	public getCoalition(): coalition.sideId;
+
+
 	/**
 	 * Activates the group if it had a delated start or late activation.
 	 */
@@ -51,12 +55,6 @@ declare class Group implements ICoalitionEntity {
 	 * @param value Whether or not the radar emitters should be on.
 	 */
 	public enableEmission(value: boolean): void;
-
-
-
-
-	/* ICoalitionEntity */
-	public getCoalition(): coalition.sideId;
 
 
 
