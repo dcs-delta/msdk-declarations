@@ -147,7 +147,7 @@ declare class Unit implements ICoalitionObject {
 
 
 	/* ICoalitionObject */
-	public getCoalition(): MSE.CoalitionSide;
+	public getCoalition(): coalition.sideId;
 	public getCountry(): country.countryId;
 
 
