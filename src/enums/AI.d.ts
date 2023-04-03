@@ -104,6 +104,9 @@ declare namespace AI {
 
 			}
 
+			export type Key = idValue;
+			export type Value = val.ROEValue | val.REACTION_ON_THREATValue | val.RADAR_USINGValue | val.FLARE_USINGValue | val.ECM_USINGValue | val.MISSILE_ATTACKValue;
+
 		}
 
 
@@ -135,6 +138,9 @@ declare namespace AI {
 
 			}
 
+			export type Key = idValue;
+			export type Value = val.ROEValue | val.ALARM_STATEValue;
+
 		}
 
 
@@ -154,6 +160,9 @@ declare namespace AI {
 				export const ROE: Record<ROEKey, ROEValue>;
 
 			}
+
+			export type Key = idValue;
+			export type Value = val.ROEValue;
 
 		}
 
