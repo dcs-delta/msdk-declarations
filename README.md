@@ -1,7 +1,7 @@
-> **Notice**
+> **Note**<br/>
 > This project is in its early stages, not everything is set up properly yet.
 
-> **Warning**
+> **Warning**<br/>
 > The declarations are not yet complete, certain classes and object formats are missing. Not to mention the occasional missing member.
 
 # Δ MSDK Declarations
