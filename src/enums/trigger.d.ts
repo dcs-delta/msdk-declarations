@@ -6,6 +6,7 @@ declare namespace trigger {
 	export const smokeColor: Record<smokeColorName, smokeColorId>;
 
 
+	export type smokeEffectPresetId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 
 
 	export type flareColorName = "Green" | "Red" | "White" | "Yellow";

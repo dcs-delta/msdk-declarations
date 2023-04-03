@@ -20,7 +20,7 @@ declare module trigger {
 		 *
 		 * More info: {@link https://wiki.hoggitworld.com/view/DCS_func_ctfColorTag}
 		 */
-		export function ctfColorTag(this: void, unitName: string, smokeColor: MSE.CtfSmokeColor, altitude?: number): void;
+		export function ctfColorTag(this: void, unitName: string, smokeColor: number, altitude?: number): void;
 
 
 		/**
@@ -45,7 +45,7 @@ declare module trigger {
 		 *
 		 * More info: {@link https://wiki.hoggitworld.com/view/DCS_func_explosion}
 		 */
-		export function explosion(this: void, location: MSE.Vec3, power: number): void;
+		export function explosion(this: void, location: Vec3, power: number): void;
 
 
 		/**
@@ -56,7 +56,7 @@ declare module trigger {
 		 *
 		 * More info: {@link https://wiki.hoggitworld.com/view/DCS_func_smoke}
 		 */
-		export function smoke(this: void, location: MSE.Vec3, color: MSE.SmokeColor): void;
+		export function smoke(this: void, location: Vec3, color: trigger.smokeColorId): void;
 
 
 		/**
@@ -69,7 +69,7 @@ declare module trigger {
 		 *
 		 * More info: {@link https://wiki.hoggitworld.com/view/DCS_func_effectSmokeBig}
 		 */
-		export function effectSmokeBig(this: void, location: MSE.Vec3, preset: MSE.SmokeEffectPreset, density: number, name?: string): void;
+		export function effectSmokeBig(this: void, location: Vec3, preset: trigger.smokeEffectPresetId, density: number, name?: string): void;
 
 
 		/**
@@ -90,7 +90,7 @@ declare module trigger {
 		 *
 		 * More info: {@link https://wiki.hoggitworld.com/view/DCS_func_illuminationBomb}
 		 */
-		export function illuminationBomb(this: void, location: MSE.Vec3, power: number): void;
+		export function illuminationBomb(this: void, location: Vec3, power: number): void;
 
 
 		/**
@@ -102,7 +102,7 @@ declare module trigger {
 		 *
 		 * More info: {@link https://wiki.hoggitworld.com/view/DCS_func_signalFlare}
 		 */
-		export function signalFlare(this: void, location: MSE.Vec3, color: MSE.FlareColor, azimuth: number): void;
+		export function signalFlare(this: void, location: Vec3, color: trigger.flareColorId, azimuth: number): void;
 
 
 		/**

@@ -54,19 +54,19 @@ declare class _Object {
 	/**
 	 * Gets the location vector of the object.
 	 */
-	public getPoint(): MSE.Vec3;
+	public getPoint(): Vec3;
 
 
 	/**
 	 * Gets the location vector as well as orientation vectors of the object.
 	 */
-	public getPosition(): MSE.Position3;
+	public getPosition(): Position3;
 
 
 	/**
 	 * Gets the velocity vector of the object.
 	 */
-	public getVelocity(): MSE.Vec3;
+	public getVelocity(): Vec3;
 
 
 	/**
