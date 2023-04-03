@@ -2,7 +2,7 @@ declare type StaticObjectID = number;
 
 
 /**
- * Represents a static object.
+ * Represents static objects.
  */
 declare class StaticObject implements IObject, ICoalitionObject, IIdentifiableEntity<StaticObjectID>, IAnimatable {
 
