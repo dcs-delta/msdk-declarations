@@ -1,4 +1,4 @@
-declare module coalition {
+declare namespace coalition {
 
 	/**
 	 * Spawns a new group belonging to the specified country's coalition with the specified group category based on the specified group data.
@@ -10,7 +10,7 @@ declare module coalition {
 	 * @deprecated Not yet implemented.
 	 */
 	// TODO: proper typing for any
-	export function addGroup(this: void, country: country.countryId, category: MSE.GroupCategory, data: any): Group;
+	export function addGroup(this: void, country: country.countryId, category: Group.CategoryId, data: any): Group;
 
 
 	/**
@@ -32,7 +32,7 @@ declare module coalition {
 	 * @param coalition The coalition to get the groups for.
 	 * @param category Optional category to use to filter the returned groups.
 	 */
-	export function getGroups(this: void, coalition: MSE.CoalitionSide, category?: MSE.GroupCategory): Group[];
+	export function getGroups(this: void, coalition: coalition.sideId, category?: Group.CategoryId): Group[];
 
 
 	/**
@@ -42,7 +42,7 @@ declare module coalition {
 	 *
 	 * @deprecated Not yet implemented.
 	 */
-	export function getStaticObjects(this: void, coalition: MSE.CoalitionSide) : StaticObject[];
+	export function getStaticObjects(this: void, coalition: coalition.sideId) : StaticObject[];
 
 
 	/**
@@ -50,7 +50,7 @@ declare module coalition {
 	 *
 	 * @param coalition The coalition to get the airbases for.
 	 */
-	export function getAirbases(this: void, coalition: MSE.CoalitionSide) : Airbase[];
+	export function getAirbases(this: void, coalition: coalition.sideId) : Airbase[];
 
 
 	/**
@@ -58,7 +58,7 @@ declare module coalition {
 	 *
 	 * @param coalition The coalition to get the player units for.
 	 */
-	export function getPlayers(this: void, coalition: MSE.CoalitionSide) : Unit[];
+	export function getPlayers(this: void, coalition: coalition.sideId) : Unit[];
 
 
 	/**
@@ -67,7 +67,7 @@ declare module coalition {
 	 * @param coalition The coalition to get the service units for.
 	 * @param type The service the units must provider.
 	 */
-	export function getServiceProviders(this: void, coalition: MSE.CoalitionSide, type: MSE.CoalitionService): Unit[];
+	export function getServiceProviders(this: void, coalition: coalition.sideId, type: coalition.serviceId): Unit[];
 
 
 	/**
@@ -75,6 +75,6 @@ declare module coalition {
 	 *
 	 * @param country The country to get the coalition side for.
 	 */
-	export function getCountryCoalition(this: void, country: country.countryId): MSE.CoalitionSide;
+	export function getCountryCoalition(this: void, country: country.countryId): coalition.sideId;
 
 }
