@@ -56,7 +56,7 @@ declare class Group implements ICoalitionEntity {
 
 
 	/* ICoalitionEntity */
-	public getCoalition(): MSE.CoalitionSide;
+	public getCoalition(): coalition.sideId;
 
 
 
