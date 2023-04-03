@@ -1,7 +1,7 @@
 /**
  * Tracks mission time and schedules methods.
  */
-declare module timer {
+declare namespace timer {
 
 	/**
 	 * Returns the time in seconds since simulation start.
