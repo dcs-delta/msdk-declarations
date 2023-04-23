@@ -1,3 +1,4 @@
+/// <reference path="./ai/tasks/AttackUnit.d.ts" />
 /// <reference path="./classes/Airbase.d.ts" />
 /// <reference path="./classes/Controller.d.ts" />
 /// <reference path="./classes/Group.d.ts" />
