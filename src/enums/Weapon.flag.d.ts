@@ -75,8 +75,8 @@ declare namespace Weapon {
 		"SAR_AAM" |
 		/** AR_AAM */
 		"AR_AAM" |
-		/** AnyAAM (IR_AAM + SAR_AAM + AR_AAM + SRAAM + MRAAM + LRAAM) */
-		"AnyAAM" |
+		/** AnyAMM (IR_AAM + SAR_AAM + AR_AAM + SRAAM + MRAAM + LRAAM) */
+		"AnyAMM" |
 		/** AnyMissile (ASM + AnyAAM) */
 		"AnyMissile" |
 		/** AnyAutonomousMissile (IR_AAM + AntiRadarMissile + AntiShipMissile + FireAndForgetASM + CruiseMissile) */
@@ -179,7 +179,7 @@ declare namespace Weapon {
 		0x0004000000 |
 		/** AR_AAM */
 		0x0008000000 |
-		/** AnyAAM (IR_AAM + SAR_AAM + AR_AAM + SRAAM + MRAAM + LRAAM) */
+		/** AnyAMM(IR_AAM + SAR_AAM + AR_AAM + SRAAM + MRAAM + LRAAM) */
 		0x000FC00000 |
 		/** AnyMissile (ASM + AnyAAM)    */
 		0x000FFF8000 |
